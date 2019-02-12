@@ -11,7 +11,4 @@
 |
 */
 
-Route::get('/', function () {
-    return doubleStr('hi');
-    // return view('welcome');
-});
+Route::get('/', 'PageController@home')->name('home');
